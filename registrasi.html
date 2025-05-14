@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #374151;
+        }
+        .form-container a {
+            display: block;
+            margin-top: 15px;
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registrasi</h1>
+        <form id="registerForm">
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="text" id="phone" name="phone" placeholder="Masukkan nomor telepon" required onkeypress="return hanyaAngka(event)">
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Alamat Lengkap:</label>
+            <textarea id="address" name="address" placeholder="Masukkan alamat lengkap" required></textarea>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+    <script>
+        // Fungsi untuk hanya mengizinkan angka pada input nomor telepon
+        function hanyaAngka(event) {
+            const charCode = event.which ? event.which : event.keyCode;
+            if (charCode < 48 || charCode > 57) {
+                return false; // Hanya angka (0-9) yang diizinkan
+            }
+            return true;
+        }
+
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Mencegah pengiriman form default
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const phone = document.getElementById('phone').value;
+            const dob = document.getElementById('dob').value;
+            const address = document.getElementById('address').value;
+
+            // Simpan data ke Local Storage
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('dob', dob);
+            localStorage.setItem('address', address);
+
+            alert('Registrasi berhasil!');
+            window.location.href = 'login.html'; // Arahkan ke halaman login
+        });
+    </script>
+</body>
+</html>

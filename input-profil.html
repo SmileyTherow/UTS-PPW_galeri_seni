@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1e3a8a;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Isi Profil Anda</h1>
+        <form id="profilForm">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="class">Kelas:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Alamat Lengkap:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="photo">Foto Profil:</label>
+            <input type="file" id="photo" accept="image/*" required>
+
+            <button type="button" onclick="simpanProfil()">Simpan Profil</button>
+        </form>
+    </div>
+
+    <script>
+        function simpanProfil() {
+            const nama = document.getElementById('name').value;
+            const kelas = document.getElementById('class').value;
+            const tanggalLahir = document.getElementById('dob').value;
+            const alamat = document.getElementById('address').value;
+            const photo = document.getElementById('photo').files[0];
+
+            localStorage.setItem('nama', nama);
+            localStorage.setItem('kelas', kelas);
+            localStorage.setItem('tanggalLahir', tanggalLahir);
+            localStorage.setItem('alamat', alamat);
+
+            if (photo) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    localStorage.setItem('fotoProfil', e.target.result);
+                    window.location.href = 'profil.html';
+                };
+                reader.readAsDataURL(photo);
+            } else {
+                window.location.href = 'profil.html';
+            }
+        }
+    </script>
+</body>
+</html>

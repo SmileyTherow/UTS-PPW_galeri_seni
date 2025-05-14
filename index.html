@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goresan Rasa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+    <h1>Goresan Rasa</h1>
+    <div class="search-container">
+        <button onclick=</button>
+        <input type="text" id="search" placeholder="Cari nama lukisan..." onkeyup="cariLukisan()">
+        <a href="profil.html" class="profile-icon">👤</a>
+    </div>
+</div>
+
+<div class="gallery">
+    <div class="painting" onclick="tampilkanDetail(1)" title="Stormy sea with an iceberg">
+        <img src="image/lukisan 1.jpg" alt="Lukisan 1">
+        <p>Stormy sea with an iceberg</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(2)" title="View from Roskilde towards the Fiord">
+        <img src="image/lukisan 2.jpg" alt="Lukisan 2">
+        <p>View from Roskilde towards the Fiord (1915)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(3)" title="Beach at ebb-tide, Chatham, Mass.">
+        <img src="image/lukisan 3.jpg" alt="Lukisan 3">
+        <p>Beach at ebb-tide, Chatham, Mass. (1892)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(4)" title="l’Avenue d’Orléans, durant les bombardements de Paris par les armées prussiennes, en janvier 1871">
+        <img src="image/lukisan 4.jpg" alt="Lukisan 4">
+        <p>l’Avenue d’Orléans, durant les bombardements de Paris par les armées prussiennes, en janvier 1871 (1871-1873)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(5)" title="Etter øsregn">
+        <img src="image/lukisan 5.jpg" alt="Lukisan 5">
+        <p>Etter øsregn (1869)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(6)" title="Vue de l’estacade de l’île Saint-Louis ; effet du matin">
+        <img src="image/lukisan 6.jpg" alt="Lukisan 6">
+        <p>Vue de l’estacade de l’île Saint-Louis ; effet du matin. (1901)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(7)" title="An Artist Studying from Nature">
+        <img src="image/lukisan 7.jpg" alt="Lukisan 7">
+        <p>An Artist Studying from Nature (1639)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(8)" title="The Temple of Vesta, Rome">
+        <img src="image/lukisan 8.jpg" alt="Lukisan 8">
+        <p>The Temple of Vesta, Rome (1849)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(9)" title="Démolition du pont de la Tournelle">
+        <img src="image/lukisan 9.jpg" alt="Lukisan 9">
+        <p>Démolition du pont de la Tournelle (1919)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(10)" title="A Street in Saint Louis">
+        <img src="image/lukisan 10.jpg" alt="Lukisan 10">
+        <p>A Street in Saint Louis (1863)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(11)" title="View Of The Pont Du Gard">
+        <img src="image/lukisan 11.jpg" alt="Lukisan 11">
+        <p>View Of The Pont Du Gard (1793)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(12)" title="The Palazzo Ducale and the Riva degli Schiavoni Venice">
+        <img src="image/lukisan 12.jpg" alt="Lukisan 12">
+        <p>The Palazzo Ducale and the Riva degli Schiavoni, Venice</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(13)" title="Venice, A View Of The Molo From The Piazzetta, Looking South To San Giorgio Maggiore, With The Columns Of St. Mark And St. Theodore And The biblioteca Sansoviniana">
+        <img src="image/lukisan 13.jpg" alt="Lukisan 13">
+        <p>Venice, A View Of The Molo From The Piazzetta, Looking South To San Giorgio Maggiore, With The Columns Of St. Mark And St. Theodore And The biblioteca Sansoviniana</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(14)" title="Fjordlandschaft mit Gletscher und Rentieren">
+        <img src="image/lukisan 14.jpg" alt="Lukisan 14">
+        <p>Fjordlandschaft mit Gletscher und Rentieren (1896)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(15)" title="Lonely Landscape (Peasants´ Wedding)">
+        <img src="image/lukisan 15.jpg" alt="Lukisan 15">
+        <p>Lonely Landscape (Peasants´ Wedding) (1858)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(16)" title="From Barnard’s Book on Coloring">
+        <img src="image/lukisan 16.jpg" alt="Lukisan 16">
+        <p>From Barnard’s Book on Coloring (1855)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(17)" title="Westminster Bridge, with the Lord Mayor’s Procession on the Thames">
+        <img src="image/lukisan 17.jpg" alt="Lukisan 17">
+        <p>Westminster Bridge, with the Lord Mayor’s Procession on the Thames (1747)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(18)" title="Vue du Château de Razuns, du mont Galanda et du chemin du mont Gunkels">
+        <img src="image/lukisan 18.jpg" alt="Lukisan 18">
+        <p>Vue du Château de Razuns, du mont Galanda et du chemin du mont Gunkels</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(19)" title="Interior of the Distillery">
+        <img src="image/lukisan 19.jpg" alt="Lukisan 19">
+        <p>Interior of the Distillery (1823)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(20)" title="Boats by a Stone River Landing">
+        <img src="image/lukisan 20.jpg" alt="Lukisan 20">
+        <p>Boats by a Stone River Landing (mid to late 19th century)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(21)" title="Tivoli- The Temple of the Sybil and the Campagna">
+        <img src="image/lukisan 21.jpg" alt="Lukisan 21">
+        <p>Tivoli- The Temple of the Sybil and the Campagna (circa 1765)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(22)" title="Ingresso a Marglia Colla Villa del Marchese Luchesimi">
+        <img src="image/lukisan 22.jpg" alt="Lukisan 22">
+        <p>Ingresso a Marglia Colla Villa del Marchese Luchesimi (1830)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(23)" title="Lake George">
+        <img src="image/lukisan 23.jpg" alt="Lukisan 23">
+        <p>Lake George (circa 1865)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(24)" title="Morning – River Scene with Figures near a Cottage">
+        <img src="image/lukisan 24.jpg" alt="Lukisan 24">
+        <p>Morning – River Scene with Figures near a Cottage</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(25)" title="Gezicht op de weg tussen Buitenzorg en Preanger. De groote weg van Buitenzorg naar de Preanger regentschappen">
+        <img src="image/lukisan 25.jpg" alt="Lukisan 25">
+        <p>Gezicht op de weg tussen Buitenzorg en Preanger. De groote weg van Buitenzorg naar de Preanger regentschappen (1869)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(26)" title="The Valley of Mexico from the Santa Isabel Mountain Range">
+        <img src="image/lukisan 26.jpg" alt="Lukisan 26">
+        <p>The Valley of Mexico from the Santa Isabel Mountain Range (1875)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(27)" title="North West View of St. Paul’s">
+        <img src="image/lukisan 27.jpg" alt="Lukisan 27">
+        <p>North West View of St. Paul’s (1801)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(28)" title="Vue de la ville de Stavanger en Norvège">
+        <img src="image/lukisan 28.jpg" alt="Lukisan 28">
+        <p>Vue de la ville de Stavanger en Norvège (1787 – 1791)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(29)" title="Der Altausseersee mit dem Dachstein">
+        <img src="image/lukisan 29.jpg" alt="Lukisan 29">
+        <p>Der Altausseersee mit dem Dachstein (1840)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(30)" title="The Indian’s Vespers">
+        <img src="image/lukisan 30.jpg" alt="Lukisan 30">
+        <p>The Indian’s Vespers</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(31)" title="Timber Wain on a Rough Road">
+        <img src="image/lukisan 31.jpg" alt="Lukisan 31">
+        <p>Timber Wain on a Rough Road</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(32)" title="The Harbor at Lorient">
+        <img src="image/lukisan 32.jpg" alt="Lukisan 32">
+        <p>The Harbor at Lorient (1869)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(33)" title="Riverside Farmstead">
+        <img src="image/lukisan 33.jpg" alt="Lukisan 33">
+        <p>Riverside Farmstead (1858)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(34)" title="Houses, ‘Mt. Salus’">
+        <img src="image/lukisan 34.jpg" alt="Lukisan 34">
+        <p>Houses, ‘Mt. Salus’ (1865)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(35)" title="Livjægernes udfald i Classens have 31.august 1807">
+        <img src="image/lukisan 35.jpg" alt="Lukisan 35">
+        <p>Livjægernes udfald i Classens have 31.august 1807. (1808)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(36)" title="Egyptian Landscape with a Distant View of the Pyramids">
+        <img src="image/lukisan 36.jpg" alt="Lukisan 36">
+        <p>Egyptian Landscape with a Distant View of the Pyramids (1862)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(37)" title="Modern Tombs, Aswan, Egypt">
+        <img src="image/lukisan 37.jpg" alt="Lukisan 37">
+        <p>Modern Tombs, Aswan, Egypt (circa 1890)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(38)" title="Beechwood (1867)">
+        <img src="image/lukisan 38.jpg" alt="Lukisan 38">
+        <p>Beechwood (1867)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(39)" title="Venice, View of the Rialto Bridge (1875)">
+        <img src="image/lukisan 39.jpg" alt="Lukisan 39">
+        <p>Venice, View of the Rialto Bridge (1875)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(40)" title="The Military Camp Leaving">
+        <img src="image/lukisan 40.jpg" alt="Lukisan 40">
+        <p>The Military Camp Leaving</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(41)" title="L’Ile de la Cité et le quai Conti, vus de la passerelle des Arts (1832)">
+        <img src="image/lukisan 41.jpg" alt="Lukisan 41">
+        <p>L’Ile de la Cité et le quai Conti, vus de la passerelle des Arts (1832)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(42)" title="Castel Sant’Angelo in Rome">
+        <img src="image/lukisan 42.jpg" alt="Lukisan 42">
+        <p>Castel Sant’Angelo in Rome</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(43)" title="A View of London from Highgate (1820)">
+        <img src="image/lukisan 43.jpg" alt="Lukisan 43">
+        <p>A View of London from Highgate (1820)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(44)" title="Næstved (1825 – 1826)">
+        <img src="image/lukisan 44.jpg" alt="Lukisan 44">
+        <p>Næstved (1825 – 1826)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(45)" title="Tending the herd">
+        <img src="image/lukisan 45.jpg" alt="Lukisan 45">
+        <p>Tending the herd</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(46)" title="Quai à Flessingue, journée de pluie (ca 1875)">
+        <img src="image/lukisan 46.jpg" alt="Lukisan 46">
+        <p>Quai à Flessingue, journée de pluie (ca 1875)</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(47)" title="Pyrophani – Firefishing">
+        <img src="image/lukisan 47.jpg" alt="Lukisan 47">
+        <p>Pyrophani – Firefishing</p>
+    </div>
+    <div class="painting" onclick="tampilkanDetail(48)" title="View from S. Miniato, Florence (1900)">
+        <img src="image/lukisan 48.jpg" alt="Lukisan 48">
+        <p>View from S. Miniato, Florence (1900)</p>
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="tutupDetail(event)">
+    <div class="overlay-content" id="overlayContent">
+        <img id="detailImage" src="" alt="">
+        <p id="detailTitle" style="font-size: 1.2em; margin-top: 10px;"></p>
+        <p id="detailDesc"></p>
+    </div>
+</div>
+
+<script>
+    const dataLukisan = [
+        {
+            nama: "Stormy sea with an iceberg \nGrigori Ivanovitch Kapustin (Ukrainian, 1865-1925)",
+            gambar: "image/lukisan 1.jpg",
+            deskripsi: "Lukisan ini menggambarkan lautan yang bergolak hebat, dengan ombak besar yang menggebu dan buih putih menyembur seolah diterpa angin kencang. Langit gelap dipenuhi awan tebal yang terbelah oleh cahaya samar, menciptakan kontras dramatis antara kegelapan dan kilauan pucat yang memantul di permukaan air. Di kejauhan, sebuah gunung es raksasa tampak kabur, nyaris menyatu dengan kabut dan cipratan ombak, seperti hantu yang muncul dari kedalaman."
+        },
+        {
+            nama: "View from Roskilde towards the Fiord (1915)\n  Laurits Andersen Ring (Danish, 1854 – 1933)",
+            gambar: "image/lukisan 2.jpg",
+            deskripsi: "Sebuah lukisan pemandangan yang sunyi dan kontemplatif, menangkap fjord Denmark dalam nuansa monokromatik yang lembut. Palet didominasi abu-abu pucat, krem, dan biru pudar, menciptakan atmosfer kabut tipis khas cahaya Nordik. Permukaan air yang tenang memantulkan langit berawan tanpa riak jelas, hampir seperti cermin buram. Beberapa bentuk perahu atau bangunan mungkin terlihat samar di kejauhan, digambarkan dengan sapuan kuas halus tanpa detail berlebihan."
+        },
+        {
+            nama: "Beach at ebb-tide, Chatham, Mass. (1892)\nWilliam Newton Bartholomew",
+            gambar: "image/lukisan 3.jpg",
+            deskripsi: "Sebuah lukisan impresionis Amerika yang menangkap pantai berpasir di Chatham, Massachusetts saat air laut surut. Permukaan pasir basah memantulkan cahaya keemasan matahari dengan nuansa pink, abu-abu kebiruan, dan krem yang berbaur halus. Sapuan kuas longgar dan cepat menciptakan kesan spontanitas, khas gaya plein air Chase. Di latar depan, genangan air pasang surut membentuk cermin alami yang memantulkan langit berawan. Beberapa perahu nelayan kecil teronggok miring di pasir, tali dan jaring berserakan, menunjukkan aktivitas manusia yang baru saja usai. Di kejauhan, garis samar ombak kecil dan langit lebar menambah kedalaman pemandangan."
+        },
+        {
+            nama: "l’Avenue d’Orléans, durant les bombardements de Paris par les armées prussiennes, en janvier 1871 (1871-1873)\n  Henri Félix Emmanuel Philippoteaux (French, 1815-1884)",
+            gambar: "image/lukisan 4.jpg",
+            deskripsi: "Sebuah lukisan alegoris yang menggambarkan luka Paris selama Pengepungan tahun 1871 oleh pasukan Prusia. Avenue d’Orléans (kini Avenue du Général Leclerc) terbentang sunyi di bawah langit musim dingin yang muram. Bangunan-bangunan berjajar dengan jendela-jendela gelap dan retak, beberapa dihantam peluru meriam, berdiri seperti saksi bisu kehancuran. Di tengah jalan, bayangan figur-figur bergerak lambat—warga sipil, tentara, mungkin pengungsi—menyelinap di antara reruntuhan, seolah arwah yang tersesat di kota yang terluka. Asap samar mengepul di kejauhan, membawa bau mesiu dan dingin yang menggigit. Dalam karya ini, Philippoteaux tidak hanya melukis lanskap kota, tapi juga mengguratkan trauma, ketakberdayaan, dan ketabahan yang menyelimuti Paris di tengah badai sejarah."
+        },
+        {
+            nama: "Etter øsregn (1869)\nAmaldus Nielsen (Norwegian, 1838 – 1932)",
+            gambar: "image/lukisan 5.jpg",
+            deskripsi: "Sebuah pemandangan pesisir Norwegia setelah hujan lebat, sunyi namun memikat. Sebuah rumah kayu berwarna kuning dengan atap merah berdiri di tepi perairan, tampak tenang di bawah langit kelabu yang masih menyimpan sisa badai. Di sekitarnya, perahu-perahu kecil tertambat di pinggir dermaga, air yang menggenang memantulkan cahaya lembut dari langit mendung. Alam terlihat lembap, diam, dan penuh jeda—seolah segalanya berhenti sejenak untuk bernapas. Dengan sapuan warna-warna dingin dan komposisi yang seimbang, Nielsen menangkap suasana pasca-hujan dengan keheningan yang mengandung keteduhan dan kontemplasi."
+        },
+        {
+            nama: "Vue de l’estacade de l’île Saint-Louis ; effet du matin. (1901)\n Edouard Zawiski (French, 19th century)",
+            gambar: "image/lukisan 6.jpg",
+            deskripsi: "Sebuah lukisan yang menangkap suasana pagi di estakade Île Saint-Louis, Paris, dengan cahaya lembut yang menyapu permukaan Sungai Seine. Kabut tipis masih menggantung di udara, memburamkan garis antara langit dan air. Siluet jembatan dan bangunan muncul perlahan dari kabut, sementara pantulan cahaya pagi menciptakan nuansa keperakan di permukaan sungai. Aktivitas manusia hampir tak terlihat—hanya ketenangan pagi yang menyelimuti, seolah waktu sendiri enggan bergerak. Sebuah potret sunyi dari Paris yang belum terbangun, direkam dalam sapuan kuas yang halus dan puitis."
+        },
+        {
+            nama: "An Artist Studying from Nature (1639)\n Claude Lorrain (French, 1604-1682)",
+            gambar: "image/lukisan 7.jpg",
+            deskripsi: "Sebuah lukisan yang menggambarkan seorang seniman muda yang tenggelam dalam pengamatan alam, duduk di medan berbatu dengan sketsa di tangan. Sosoknya kecil di tengah lanskap luas yang liar dan tidak teratur—pepohonan melengkung, tanah kasar, dan langit mendung yang mengintai di atas. Cahaya lembut jatuh pada tubuhnya, menyoroti dedikasi diam-diam dalam pencariannya akan kebenaran visual. Dalam kesunyian itu, alam tampak lebih besar dari manusia, namun justru di sanalah kekuatan karya seni lahir—dari keterasingan, pengamatan, dan kerendahan hati di hadapan dunia nyata."
+        },
+        {
+            nama: "The Temple of Vesta, Rome (1849)\n James Holland (English, 1800-1870)",
+            gambar: "image/lukisan 8.jpg",
+            deskripsi: "Sebuah lukisan yang menampilkan Kuil Vesta berdiri anggun di atas sisa reruntuhan kuno Roma, dikelilingi oleh lanskap yang tenang namun sarat sejarah. Pilar-pilar bundarnya menjulang dalam keheningan, tersinari cahaya lembut matahari yang memudar. Di kejauhan, langit berwarna jingga keemasan menyelimuti kota abadi, sementara bayangan panjang menyentuh tanah yang pernah menjadi pusat kekaisaran. Tak ada keramaian, hanya bisikan waktu yang bergema di antara batu-batu tua. Sebuah penghormatan visual pada kejayaan klasik dan kefanaan yang indah."
+        },
+        {
+            nama: "Démolition du pont de la Tournelle (1919)\n Frank Milton Armington (Canadian, 1876-1941)",
+            gambar: "image/lukisan 9.jpg",
+            deskripsi: "Sebuah lukisan yang merekam momen pilu di jantung Paris: pembongkaran Pont de la Tournelle, jembatan bersejarah yang telah menghubungkan tepian Seine selama berabad-abad. Balok-balok batu tercerai, crane dan alat berat berdiri kaku di tepi sungai, sementara debu halus mengepul di udara. Sungai mengalir tenang, seolah menyaksikan diam-diam pergeseran zaman. Di kejauhan, menara Notre-Dame mengintip, menjadi saksi bisu dari hilangnya satu bagian warisan kota. Ini bukan sekadar adegan konstruksi, melainkan simbol perubahan, kehilangan, dan kenangan yang runtuh perlahan bersama batu terakhir yang jatuh."
+        },
+        {
+            nama: "A Street in Saint Louis (1863)\n Henry Lewis (American, 1819–1904)",
+            gambar: "image/lukisan 10.jpg",
+            deskripsi: "Lukisan ini menampilkan sebuah rumah bergaya Italia dengan atap miring yang lembut dan pagar besi yang megah, mencerminkan arsitektur khas Saint Louis pada pertengahan abad ke-19. Di sekitarnya, suasana jalan tampak hidup dengan aktivitas sehari-hari: pejalan kaki melintas, kereta kuda berlalu, dan warga berinteraksi, menggambarkan dinamika sosial kota pada masa itu. "
+        },
+        {
+            nama: "View Of The Pont Du Gard (1793)\n Paul Grégoire (French, 18th Century)",
+            gambar: "image/lukisan 11.jpg",
+            deskripsi: "Sebuah lukisan yang menampilkan kemegahan Pont du Gard, aqueduct Romawi yang menjulang kokoh di atas Sungai Gardon, di tengah lanskap Prancis selatan yang sunyi. Lengkungan batu raksasa berdiri tegar, memantulkan bayangannya di air yang tenang, seolah waktu tak mampu menggerus keanggunannya. Pepohonan dan semak belukar tumbuh liar di sekitar kaki jembatan, memperkuat kesan alam yang kembali merebut ruang, namun tak menghapus jejak kejayaan masa lalu. Langit terbuka luas di atasnya, menghadirkan rasa kekal dan hening. Sebuah penghormatan pada kejayaan teknik kuno dan keindahan alam yang membingkainya."
+        },
+        {
+            nama: "The Palazzo Ducale and the Riva degli Schiavoni Venice\n Giuseppe Bernardino Bison (Italian, 1762-1844)",
+            gambar: "image/lukisan 12.jpg",
+            deskripsi: "Sebuah lukisan yang menampilkan kemegahan Palazzo Ducale dan kesibukan Riva degli Schiavoni di tepi Grand Canal, Venice. Istana Doge berdiri anggun dengan detail arsitektur Gotik yang memikat, sementara dermaga ramai oleh aktivitas warga dan perahu yang bersandar. Pantulan cahaya di air dan langit cerah menambah nuansa tenang namun hidup, menggambarkan kejayaan Venesia sebagai kota dagang maritim."
+        },
+        {
+            nama: "Venice, A View Of The Molo From The Piazzetta, Looking South To San Giorgio Maggiore, With The Columns Of St. Mark And St. Theodore And The biblioteca Sansoviniana\n Giovanni Battista Cimaroli (Italian, 1687 - 1771)",
+            gambar: "image/lukisan 13.jpg",
+            deskripsi: "Sebuah lukisan yang menampilkan pemandangan ikonik Venesia dari Piazzetta, mengarah ke selatan menuju San Giorgio Maggiore. Dua kolom agung menjulang — satu dengan singa bersayap, lambang Santo Markus, dan satunya lagi dengan sosok Santo Theodore, berdiri sebagai kesatria dengan tombak dan perisai di atas naga. Di sampingnya, Biblioteca Sansoviniana berdiri megah, mempertegas kemegahan arsitektur Venesia yang abadi, dibingkai oleh langit cerah dan kanal yang tenang."
+        },
+        {
+            nama: "PFjordlandschaft mit Gletscher und Rentieren (1896)\n August Wilhelm Leu (German, 1819-1897)",
+            gambar: "image/lukisan 14.jpg",
+            deskripsi: "Lukisan ini menggambarkan lanskap fjord Norwegia yang megah, dibingkai oleh gletser yang menjulang dan puncak gunung bersalju. Di latar depan, sekelompok rusa kutub (rentiere) berjalan tenang di antara bebatuan dan rerumputan, menyatu dengan alam liar yang membisu. Air fjord memantulkan langit pucat dan tebing yang terjal, menciptakan suasana sejuk, sunyi, dan agung — sebuah penghormatan pada keindahan alam Nordik yang masih perawan."
+        },
+        {
+            nama: "Lonely Landscape (Peasants´ Wedding) (1858)\n Adolf Kosárek (Czech, 1830-1859)",
+            gambar: "image/lukisan 15.jpg",
+            deskripsi: "Sebuah lanskap sunyi yang luas membentang di bawah langit kelabu, di mana iring-iringan kecil petani merayakan pernikahan melintasi jalan desa. Kontras antara alam yang sepi dan momen bahagia itu menciptakan nuansa melankolis yang hangat — seolah kebahagiaan sederhana tetap hidup di tengah kesendirian dan kesunyian pedesaan."
+        },
+        {
+            nama: "From Barnard’s Book on Coloring (1855)\n Elizabeth Murray (English, 1815-1882)",
+            gambar: "image/lukisan 16.jpg",
+            deskripsi: "Sebuah pemandangan pesisir yang tenang, di mana seorang wanita duduk di tepi pantai dekat perahu, sementara seorang pria berdiri di sisinya. Kapal-kapal layar berlabuh di kejauhan, menyatu dengan laut yang tenang dan langit lembut berawan. Suasana damai dan reflektif menyelimuti lukisan, menangkap momen sederhana namun penuh makna di tepian laut."
+        },
+        {
+            nama: "Westminster Bridge, with the Lord Mayor’s Procession on the Thames (1747)\n Canaletto (Italian, 1697 - 1768)",
+            gambar: "image/lukisan 17.jpg",
+            deskripsi: "Lukisan ini menangkap kemeriahan prosesi Wali Kota di Sungai Thames, dengan Jembatan Westminster yang baru dibangun membentang anggun di tengahnya. Kapal-kapal hias memenuhi sungai, bergerak di bawah langit cerah dan arsitektur kota London yang megah. Sebuah potret kejayaan kota, penuh semangat perayaan dan keanggunan masa lampau."
+        },
+        {
+            nama: "Vue du Château de Razuns, du mont Galanda et du chemin du mont Gunkels\n Johann Ludwig Bleuler (Swiss, 1792 – 1850)",
+            gambar: "image/lukisan 18.jpg",
+            deskripsi: "Sebuah lanskap pegunungan yang megah terbentang, di mana Château de Razuns berdiri anggun di kejauhan, dikelilingi oleh puncak Galanda dan jalan kecil menuju Gunung Gunkels. Di tengah hamparan alam yang hijau dan berbukit, tampak rumah-rumah pedesaan kecil bertebaran — tenang, terpencil, dan menyatu dengan alam. Lukisan ini menghadirkan ketenangan dan keindahan wilayah Swiss yang alami dan historis."
+        },
+        {
+            nama: "Interior of the Distillery (1823)\n William A. V. Clark (English, 19th Century)",
+            gambar: "image/lukisan 19.jpg",
+            deskripsi: "Sebuah ruang penyulingan abad ke-19 yang remang dan penuh aktivitas, dengan pipa-pipa tembaga, tong-tong kayu besar, dan para pekerja yang sibuk di antara uap dan cahaya lampu. Nuansa industri terasa kuat, namun tetap hangat — memancarkan kehidupan sehari-hari di balik proses rumit penyulingan, dalam suasana yang autentik dan penuh detail."
+        },
+        {
+            nama: "Boats by a Stone River Landing (mid to late 19th century)\n Maxime Lalanne (French, 1827-1886)",
+            gambar: "image/lukisan 20.jpg",
+            deskripsi: "Beberapa perahu bersandar tenang di tepi dermaga batu, air sungai mengalir lembut memantulkan cahaya langit yang suram. Bangunan dan pohon-pohon tampak samar di kejauhan, memperkuat kesan damai dan sunyi. Sebuah momen sederhana di tepian sungai yang memancarkan ketenangan dan keindahan kehidupan sehari-hari."
+        },
+        {
+            nama: "Tivoli- The Temple of the Sybil and the Campagna (circa 1765)\n Richard Wilson (English, 1714-1782)",
+            gambar: "image/lukisan 21.jpg",
+            deskripsi: "Di atas tebing hijau Tivoli, Kuil Sybil berdiri megah menghadap hamparan Campagna yang luas dan tenang. Langit senja membingkai pemandangan klasik ini dengan cahaya keemasan, mempertemukan kejayaan masa lalu dengan keindahan alam Italia yang abadi. Sebuah penghormatan terhadap warisan Romawi dan lanskap yang memikat."
+        },
+        {
+            nama: "Ingresso a Marglia Colla Villa del Marchese Luchesimi (1830)\n Johann Nepomuk Rauch (Austrian, 1804-1847)",
+            gambar: "image/lukisan 22.jpg",
+            deskripsi: "Gerbang masuk menuju Villa del Marchese Luchesimi berdiri anggun di tengah lanskap pedesaan yang tenang. Jalan berbatu mengarah ke vila megah yang tersembunyi di balik pepohonan, dengan latar perbukitan yang lembut. Sebuah adegan penuh keteduhan, yang menangkap keindahan arsitektur klasik dalam pelukan alam Italia."
+        },
+        {
+            nama: "Lake George (circa 1865)\n John Frederick Kensett (American, 1816-1872)",
+            gambar: "image/lukisan 23.jpg",
+            deskripsi: "Permukaan Danau George terbentang tenang, memantulkan langit cerah dan perbukitan hijau di kejauhan. Sebuah perahu kecil tampak melayang lembut di atas air, memperkuat kesan hening dan damai. Lukisan ini menyuguhkan keindahan alam yang murni dan abadi, khas lanskap Amerika abad ke-19."
+        },
+        {
+            nama: "Morning – River Scene with Figures near a Cottage\n John Laporte (English, 1761 - 1839)",
+            gambar: "image/lukisan 24.jpg",
+            deskripsi: "Cahaya pagi menyinari lembut tepian sungai, di mana beberapa sosok tampak beraktivitas di dekat sebuah pondok sederhana. Kabut tipis masih menyelimuti air, menciptakan suasana tenang dan hangat. Sebuah potret kehidupan pedesaan yang damai, dibalut nuansa pagi yang penuh harapan."
+        },
+        {
+            nama: "Gezicht op de weg tussen Buitenzorg en Preanger. De groote weg van Buitenzorg naar de Preanger regentschappen (1869)\n Johan Conrad Greive (Dutch, 1837–1891)",
+            gambar: "image/lukisan 25.jpg",
+            deskripsi: "Jalan besar membentang di antara pepohonan rindang, menghubungkan Buitenzorg dengan tanah Preanger yang subur. Di sepanjang jalan, tampak pejalan kaki dan kereta kuda yang melintasi alam tropis Hindia Belanda. Sebuah pemandangan yang merekam suasana kolonial dengan sentuhan keindahan alam nusantara yang tenang dan hijau."
+        },
+        {
+            nama: "The Valley of Mexico from the Santa Isabel Mountain Range (1875)\n José María Velasco (Mexican, 1840 – 1912)",
+            gambar: "image/lukisan 26.jpg",
+            deskripsi: "Hamparan Lembah Meksiko terbuka luas dari ketinggian Pegunungan Santa Isabel, dengan danau tenang, pepohonan hijau, dan gunung berapi menjulang di kejauhan. Alam terlihat agung namun bersahaja, memadukan keindahan geografis dengan kedalaman rasa kebangsaan. Sebuah karya yang merayakan tanah air dalam ketenangan panorama alamnya."
+        },
+        {
+            nama: "North West View of St. Paul’s (1801)\n Thomas Malton (English, 1726–1801)",
+            gambar: "image/lukisan 27.jpg",
+            deskripsi: "Kubah megah St. Paul’s Cathedral menjulang dari sudut barat laut, dikelilingi bangunan kota yang sibuk namun tertata. Langit cerah dan bayangan lembut menyorot kemegahan arsitektur klasiknya. Sebuah pandangan yang menangkap keagungan London di awal abad ke-19, tenang namun penuh wibawa."
+        },
+        {
+            nama: "Vue de la ville de Stavanger en Norvège (1787 – 1791)\n Georg Haas (German, 1756 - 1817)",
+            gambar: "image/lukisan 28.jpg",
+            deskripsi: "Kota Stavanger terlihat tenang di kaki perbukitan, dengan bangunan-bangunan batu yang tersusun rapi di sepanjang tepian perairan. Lanskapnya tertata indah, menampilkan suasana klasik kota Norwegia abad ke-18. Langit terbuka dan nuansa alami di sekelilingnya memberi kesan damai dan tertib, seolah waktu berjalan lambat di bawah pandangan pegunungan."
+        },
+        {
+            nama: "Der Altausseersee mit dem Dachstein (1840)\n Thomas Ender (Austrian, 1793-1875)",
+            gambar: "image/lukisan 29.jpg",
+            deskripsi: "Danau Altaussee membentang tenang, memantulkan megahnya puncak Dachstein yang diselimuti salju. Pepohonan dan tebing batu mengelilingi air yang jernih, menciptakan harmoni antara keteduhan alam dan keagungan pegunungan. Sebuah lanskap Alpen yang memukau, penuh kedamaian dan keagungan alam Austria."
+        },
+        {
+            nama: "The Indian’s Vespers\n Asher Brown Durand (American, 1796-1886)",
+            gambar: "image/lukisan 30.jpg",
+            deskripsi: "Seorang penduduk asli berdiri diam di tepi tebing saat matahari mulai tenggelam, langit sore memerah di balik hamparan hutan dan pegunungan. Suasana hening dan sakral menyelimuti lanskap, seolah alam turut bersujud dalam senja. Sebuah momen reflektif yang menyatukan manusia dan alam dalam ketenangan spiritual."
+        },
+        {
+            nama: "Timber Wain on a Rough Road\n George Barret (Irish, 1767–1842)",
+            gambar: "image/lukisan 31.jpg",
+            deskripsi: "Sebuah lukisan lanskap pastoral yang tenang dan melankolis, menampilkan kereta pengangkut kayu yang perlahan melintasi jalan tanah berbatu di tengah hutan lebat. Palet warna didominasi cokelat tanah, hijau kusam, dan kelabu langit yang berat, menciptakan kesan berat dan beban dalam suasana. Detail kasar permukaan jalan dan roda kayu kontras dengan sapuan lembut dedaunan dan langit yang mendung. Sosok-sosok manusia dan hewan tampak kecil dan nyaris larut dalam alam sekitar, menekankan kerendahan manusia di hadapan lanskap yang agung dan tak terjamah."
+        },
+        {
+            nama: "The Harbor at Lorient (1869)\n Berthe Morisot (French, 1841-1895)",
+            gambar: "image/lukisan 32.jpg",
+            deskripsi: "Sebuah lukisan pelabuhan yang lembut dan reflektif, menangkap suasana Lorient di bawah cahaya musim panas yang hangat. Palet warna didominasi biru laut muda, putih keperakan, dan sentuhan kuning pucat, menciptakan nuansa ringan dan penuh udara. Air di pelabuhan membentang tenang, memantulkan layar perahu dan langit yang terbuka dengan sapuan kuas impresionistik yang ringan. Seorang perempuan duduk di bangku menghadap ke air, digambarkan dengan kelembutan tanpa kontur tajam, seolah menyatu dengan lanskap yang mengelilinginya — menghadirkan momen sunyi antara manusia dan alam dalam keseharian yang sederhana."
+        },
+        {
+            nama: "Riverside Farmstead (1858)\n Mikhail Klodt (Russian, 1833-1902)",
+            gambar: "image/lukisan 33.jpg",
+            deskripsi: "Sebuah lukisan pedesaan yang hening dan membumi, menangkap suasana tenang di tepi sungai Rusia yang mengalir lambat. Palet warna didominasi hijau tua, cokelat lembut, dan biru kelabu, menciptakan lanskap yang realistis namun penuh perasaan. Gubuk kayu sederhana dan ladang terbuka tampak menyatu dengan garis sungai yang mengalir tenang di bawah langit luas yang mendung. Pepohonan berdiri diam, bayangannya jatuh samar di permukaan air. Komposisi yang seimbang dan sapuan kuas yang terukur menyampaikan keheningan hidup desa, seolah waktu melambat dan menyatu dengan alam sekitar."
+        },
+        {
+            nama: "Houses, ‘Mt. Salus’ (1865)\n Frederic Edwin Church (American, 1826-1900)",
+            gambar: "image/lukisan 34.jpg",
+            deskripsi: "Sebuah lukisan hunian pedesaan yang tenang dan intim, menangkap pemandangan rumah-rumah di kaki bukit Mt. Salus dalam cahaya sore yang lembut. Palet warna hangat — krem, hijau zaitun, dan jingga samar — menciptakan atmosfer damai yang menyatu dengan alam sekitarnya. Struktur bangunan tampak sederhana namun kokoh, dikelilingi pepohonan rindang dan hamparan rumput yang terlukis dengan sapuan kuas halus dan terukur. Langit luas membentang tenang di latar belakang, seolah menjadi selimut cahaya bagi lanskap yang hening. Sebuah potret kecil kehidupan sehari-hari yang dipenuhi keteduhan dan rasa keterhubungan dengan alam."
+        },
+        {
+            nama: "Livjægernes udfald i Classens have 31.august 1807. (1808)\n Christoffer Wilhelm Eckersberg (Danish, 1783 – 1853)",
+            gambar: "image/lukisan 35.jpg",
+            deskripsi: "Sebuah lukisan sejarah yang dramatik namun terukur, menggambarkan pertempuran sengit antara pasukan Denmark dan Inggris di kebun Classens pada akhir musim panas 1807. Palet warna alami — hijau tua, kelabu tanah, dan merah-biru seragam militer — menciptakan keseimbangan antara intensitas aksi dan suasana yang membisu setelah ledakan. Barisan pohon menjadi saksi bisu dari kekacauan yang tertata, sementara sosok-sosok prajurit tampak terlibat dalam pergerakan yang terkendali, digambarkan dengan presisi neoklasik yang khas. Cahaya lembut menembus dedaunan, memecah ketegangan dengan ketenangan visual, menjadikan peristiwa sejarah ini tak sekadar dokumentasi perang, tapi juga refleksi akan keberanian dan pengorbanan dalam lanskap yang tetap berdiri diam."
+        },
+        {
+            nama: "Egyptian Landscape with a Distant View of the Pyramids (1862)\n David Roberts (Scottish, 1796-1864)",
+            gambar: "image/lukisan 36.jpg",
+            deskripsi: "Sebuah lanskap Timur yang luas dan hening, menampilkan gurun Mesir yang membentang hingga ke cakrawala, di mana siluet piramida menjulang samar dalam kabut panas kejauhan. Palet warna didominasi oker hangus, krem pasir, dan langit biru keabu-abuan, menciptakan suasana kering yang megah dan tak terusik waktu. Di latar depan, bentuk-bentuk pohon palem dan reruntuhan kuno berdiri diam, seolah membisikkan jejak peradaban yang lama tertidur. Sapuan kuas lembut namun penuh struktur menangkap keheningan padang pasir dan kesan kekal dari lanskap yang tak berubah. Sebuah pengamatan tenang atas waktu, ruang, dan warisan sejarah yang agung."
+        },
+        {
+            nama: "Modern Tombs, Aswan, Egypt (circa 1890)\n Elihu Vedder (American, 1836-1923)",
+            gambar: "image/lukisan 37.jpg",
+            deskripsi: "Sebuah lanskap gurun yang sunyi dan reflektif, menangkap deretan makam modern di Aswan dalam cahaya senja yang membara. Palet warna didominasi cokelat tanah, oranye kemerahan, dan kuning pasir yang lembut, menyatu dalam kehangatan gurun yang abadi. Struktur makam tampak sederhana namun kokoh, tertanam dalam lanskap berbatu yang luas dan tandus. Langit terbuka memudar menuju gelap, sementara bayangan panjang mulai merambat di antara bukit dan bebatuan. Dengan sapuan kuas yang tenang dan terukur, Vedder mengungkapkan keheningan spiritual — sebuah perenungan tentang kefanaan manusia di hadapan lanskap purba yang terus hidup."
+        },
+        {
+            nama: "Beechwood (1867)\n John Atkinson Grimshaw (English, 1836 – 1893)",
+            gambar: "image/lukisan 38.jpg",
+            deskripsi: "Sebuah lanskap hutan yang hening dan penuh suasana, menggambarkan jalur sempit yang membelah barisan pohon beech tinggi menjelang senja. Palet warna didominasi cokelat keemasan, hijau temaram, dan abu-abu kebiruan, menciptakan nuansa lembut dan melankolis khas cahaya musim gugur. Dedaunan berguguran menutupi jalan tanah, sementara batang-batang pohon menjulang tegak dalam komposisi ritmis yang tenang. Cahaya lembut menyusup dari celah pepohonan, membentuk bayangan panjang yang menyatu dengan tanah. Tidak ada sosok manusia, hanya keheningan alam yang menyelimuti — seolah waktu berhenti dalam momen sunyi yang mendalam."
+        },
+        {
+            nama: "Venice, View of the Rialto Bridge (1875)\n Luigi Ferrazzi (Italian, 1850 - 1897)",
+            gambar: "image/lukisan 39.jpg",
+            deskripsi: "Sebuah pemandangan kanal Venesia yang tenang dan penuh nostalgia, menyorot Jembatan Rialto dalam cahaya sore yang lembut. Palet warna didominasi biru keabu-abuan, krem hangat, dan pantulan emas pucat dari air yang bergerak pelan. Bangunan-bangunan tua berjajar di sepanjang kanal, wajah-wajahnya memudar oleh waktu, sementara siluet jembatan melengkung kokoh di tengah komposisi. Perahu-perahu gondola tampak diam atau bergerak perlahan, sapuan kuas halus menangkap bayangan mereka di air dengan lirih. Suasana yang dihadirkan bukan gemerlap, melainkan kesenyapan kota air yang telah melihat berabad-abad berlalu, dalam detik yang seolah membeku antara sejarah dan keabadian."
+        },
+        {
+            nama: "The Military Camp Leaving\n Jacques-François-Joseph Swebach (French, 1769-1823)",
+            gambar: "image/lukisan 40.jpg",
+            deskripsi: "Sebuah adegan keberangkatan yang dinamis namun tertahan dalam keheningan visual, menampilkan barisan pasukan yang bersiap meninggalkan perkemahan militer di pagi berkabut. Palet warna hangat dan bersahaja — cokelat tanah, biru kelabu, dan merah pudar dari seragam — menghadirkan suasana transisi antara istirahat dan perjalanan. Tenda-tenda masih berdiri, sebagian mulai dilipat, sementara kuda-kuda dan kereta tampak bergerak perlahan, menyatu dalam ritme yang terukur. Sapuan kuas yang lincah menangkap gerakan namun membiarkannya membeku dalam ketenangan. Di balik aktivitas militer, terdapat nuansa sunyi — seolah medan perang masih jauh, namun bayangannya telah menggelayut di udara."
+        },
+        {
+            nama: "L’Ile de la Cité et le quai Conti, vus de la passerelle des Arts (1832)\n Giuseppe Canella (Italian, 1788 - 1847)",
+            gambar: "image/lukisan 41.jpg",
+            deskripsi: "Sebuah lanskap kota yang tenang dan terukur, menangkap pemandangan Île de la Cité dan quai Conti dari sudut pandang yang melintasi Sungai Seine. Palet warna didominasi abu-abu keperakan, krem batu, dan biru langit yang pudar — menciptakan atmosfer Paris awal abad ke-19 yang tertahan dalam cahaya pagi. Sungai mengalir pelan, memantulkan fasad-fasad bangunan klasik yang berjajar tenang, sementara jembatan Passerelle des Arts membingkai komposisi dengan kesederhanaan geometris. Beberapa sosok kecil terlihat berjalan atau berdiri diam, nyaris larut dalam latar. Dalam keheningan visual ini, kota tampak seolah menahan napas — tidak dalam hiruk pikuk, melainkan dalam kesadaran akan waktu yang terus bergerak lambat namun pasti."
+        },
+        {
+            nama: "Castel Sant’Angelo in Rome\n Henryk Cieszkowski (Polish, 1835-1895)",
+            gambar: "image/lukisan 42.jpg",
+            deskripsi: "Sebuah lanskap kota yang hening dan agung, menampilkan Castel Sant’Angelo yang berdiri kokoh di tepian Sungai Tiber, dibalut cahaya lembut khas sore Romawi. Palet warna hangat — oker lembut, cokelat batu, dan biru kelabu langit — menciptakan suasana klasik yang tak lekang oleh waktu. Bentuk kastil membulat teguh di tengah komposisi, bayangannya jatuh pelan ke permukaan air yang tenang. Di sekelilingnya, jembatan dan pepohonan berdiri diam, menciptakan kesan keteraturan dan keabadian. Dengan sapuan kuas yang halus dan pencahayaan yang terukur, Cieszkowski menangkap bukan hanya arsitektur, tetapi juga keheningan batin kota yang penuh sejarah — seolah Roma berbicara tanpa suara, melalui batu, air, dan cahaya."
+        },
+        {
+            nama: "A View of London from Highgate (1820)\n George Barret Jr. (English, 1767–1842)",
+            gambar: "image/lukisan 43.jpg",
+            deskripsi: "Sebuah lanskap luas yang tenang dan penuh jarak pandang, memperlihatkan kota London dari ketinggian Highgate dalam suasana pagi yang lembut. Palet warna didominasi hijau pucat, cokelat tanah, dan biru kelabu yang menyatu dalam kabut tipis, menciptakan kesan atmosferik yang lapang dan melankolis. Pohon-pohon di latar depan membingkai pandangan ke arah cakrawala kota, di mana bangunan-bangunan kecil tampak jauh, nyaris larut dalam cahaya dan kabut. Tidak ada hiruk pikuk metropolitan, hanya bentangan tenang antara alam dan kota yang perlahan terbangun. Sebuah pengamatan lirih tentang keterpisahan dan keterhubungan — antara manusia, sejarah, dan lanskap yang menyaksikan semuanya dari kejauhan."
+        },
+        {
+            nama: "Næstved (1825 – 1826)\n Jens Holm (Danish, 1776–1859)",
+            gambar: "image/lukisan 44.jpg",
+            deskripsi: "Sebuah lanskap kota kecil yang tenang dan tertata, menampilkan Næstved dalam cahaya alami yang lembut dan merata. Palet warna didominasi hijau zaitun, cokelat keabu-abuan, dan biru langit pucat, menghadirkan suasana pedesaan yang damai dan tak terusik. Bangunan-bangunan rendah dengan atap merah tersebar di antara pepohonan dan ladang, sementara gereja tua menjulang tenang di tengah kota sebagai penanda waktu dan spiritualitas. Komposisinya luas namun intim, menangkap harmoni antara alam dan permukiman manusia. Tidak ada gerak yang tergesa — hanya keheningan sehari-hari yang mengalir pelan, seperti napas panjang dari sebuah tempat yang telah berdamai dengan ritmenya sendiri."
+        },
+        {
+            nama: "Tending the herd\n Giuseppe Palizzi (Italian, 1812 - 1888)",
+            gambar: "image/lukisan 45.jpg",
+            deskripsi: "Sebuah lanskap pastoral yang sunyi dan penuh keakraban, menampilkan sosok penggembala yang menjaga kawanan ternak di antara padang rumput yang luas dan bergelombang. Palet warna didominasi hijau zaitun, cokelat tanah, dan langit biru yang tertutup lembut awan tipis, menciptakan suasana alami yang damai dan meresap. Ternak tersebar dalam ketertiban organik, sebagian merumput, sebagian diam — menyatu dengan lanskap yang tenang. Sosok manusia nyaris kecil dalam skala lukisan, namun justru memperkuat hubungan harmonis antara manusia dan alam. Dengan sapuan kuas yang halus dan observasi yang jujur, Palizzi menangkap ketenangan kerja sehari-hari dan kebijaksanaan yang tumbuh dari kesunyian ladang."
+        },
+        {
+            nama: "Quai à Flessingue, journée de pluie (ca 1875)\n François Musin (Belgian, 1820-1888)",
+            gambar: "image/lukisan 46.jpg",
+            deskripsi: "Sebuah pemandangan dermaga yang basah dan muram, menangkap suasana hari hujan di Flessingue dengan ketenangan yang puitis. Palet warna didominasi abu-abu kebiruan, cokelat lembab, dan kilau perak tipis dari genangan air, menciptakan atmosfer berat namun tenang. Langit tertutup awan rendah, menyatu dengan horison laut dan bangunan pelabuhan yang tampak suram namun kokoh. Beberapa sosok dan perahu terekam samar di kejauhan, nyaris larut dalam kabut hujan. Tidak ada gerakan yang tergesa — hanya ritme air yang jatuh, angin pelan, dan dermaga yang menunggu dalam diam. Sebuah potret tentang keterasingan yang akrab, ketika kota dan laut menyatu dalam keheningan cuaca."
+        },
+        {
+            nama: "Pyrophani – Firefishing\n Konstantinos Volanakis (Greek, 1837-1907)",
+            gambar: "image/lukisan 47.jpg",
+            deskripsi: "Sebuah adegan malam di tepi laut yang tenang dan misterius, menangkap tradisi memancing dengan api (pyrophani) dalam cahaya yang redup dan sakral. Palet warna didominasi biru tua, hitam kehijauan, dan cahaya kuning keemasan yang memancar dari obor di atas perahu. Laut memantulkan cahaya api seperti kilau emas di permukaan yang gelap, menciptakan kontras tajam namun lembut. Sosok-sosok nelayan tampak fokus, nyaris siluet, larut dalam kesunyian kerja dan keremangan malam. Tidak ada suara selain percikan air dan nyala api yang bergoyang. Volanakis menyusun pemandangan ini bukan sekadar dokumentasi, melainkan perenungan tentang hubungan purba antara manusia, laut, dan cahaya dalam kegelapan."
+        },
+        {
+            nama: "View from S. Miniato, Florence (1900)\n George Elbert Burr (American, 1859 – 1939)",
+            gambar: "image/lukisan 48.jpg",
+            deskripsi: "Sebuah lanskap yang hening dan bermeditasi, memandang dari ketinggian San Miniato ke arah kota Florence yang membentang lembut di kejauhan. Palet warna redup — krem hangat, hijau zaitun, dan biru kelabu — menangkap atmosfer senja atau pagi yang tertahan dalam cahaya samar. Kubah dan menara kota muncul perlahan dari lapisan kabut, tidak menuntut perhatian, melainkan hadir sebagai bagian dari lanskap yang menyatu. Barisan pepohonan di latar depan membingkai pandangan tanpa menghalangi, seolah mengajak mata untuk diam dan menyimak. Di antara bayang dan cahaya, Florence tidak tampil megah, tapi akrab dan abadi — sebuah kenangan yang diam dalam waktu."
+        },
+    ];
+
+    function tampilkanDetail(index) {
+    const data = dataLukisan[index - 1];
+    if (!data) return;
+
+    document.getElementById('detailImage').src = data.gambar;
+    document.getElementById('detailTitle').innerText = data.nama;
+    document.getElementById('detailDesc').innerText = data.deskripsi;
+    document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function tutupDetail() {
+        if (event.target.id === "overlay") {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    }
+    function cariLukisan() {
+    const input = document.getElementById('search').value.toLowerCase();
+    const lukisan = document.querySelectorAll('.painting');
+    lukisan.forEach(painting => {
+        const title = painting.querySelector('p').innerText.toLowerCase();
+        painting.style.display = title.includes(input) ? 'block' : 'none';
+    });
+}
+</script>
+
+</body>
+</html>

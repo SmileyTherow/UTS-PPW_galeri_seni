@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pengguna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .profile-card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      width: 400px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #1e3a8a;
+    }
+    .profile-card h2 {
+      margin: 15px 0 10px;
+      font-size: 24px;
+      color: #1e3a8a;
+    }
+    .profile-card p {
+      margin: 8px 0;
+      color: #555;
+      font-size: 16px;
+    }
+    .profile-card p strong {
+      color: #333;
+    }
+    .logout-btn {
+      margin-top: 25px;
+      padding: 12px;
+      width: 100%;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .logout-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img id="fotoProfil" src="image/default-profile.jpg" alt="Foto Profil">
+    <h2 id="nama">Nama Pengguna</h2>
+    <p><strong>Kelas:</strong> <span id="kelas">Belum diisi</span></p>
+    <p><strong>Umur:</strong> <span id="umur">Belum diisi</span></p>
+    <p><strong>Alamat:</strong> <span id="alamat">Belum diisi</span></p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    // Ambil data dari Local Storage
+    const nama = localStorage.getItem('nama');
+    const kelas = localStorage.getItem('kelas');
+    const tanggalLahir = localStorage.getItem('tanggalLahir');
+    const alamat = localStorage.getItem('alamat');
+    const fotoProfil = localStorage.getItem('fotoProfil');
+
+    // Hitung umur berdasarkan tanggal lahir
+    const hitungUmur = (tanggalLahir) => {
+      if (!tanggalLahir) return 'Belum diisi';
+      const today = new Date();
+      const birthDate = new Date(tanggalLahir);
+      let umur = today.getFullYear() - birthDate.getFullYear();
+      const bulan = today.getMonth() - birthDate.getMonth();
+      if (bulan < 0 || (bulan === 0 && today.getDate() < birthDate.getDate())) {
+        umur--;
+      }
+      return `${umur} Tahun`;
+    };
+
+    // Tampilkan data di halaman
+    document.getElementById('nama').textContent = nama || 'Belum diisi';
+    document.getElementById('kelas').textContent = kelas || 'Belum diisi';
+    document.getElementById('umur').textContent = hitungUmur(tanggalLahir);
+    document.getElementById('alamat').textContent = alamat || 'Belum diisi';
+    document.getElementById('fotoProfil').src = fotoProfil || 'image/default-profile.jpg';
+
+    // Fungsi logout
+    function logout() {
+      alert("Anda telah logout.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
